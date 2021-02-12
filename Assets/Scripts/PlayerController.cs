@@ -99,22 +99,22 @@ void scoreCheck()
 //PLAYER MOVEMENT
 void Checkinput()
 {
-    if (Input.GetKeyDown("left"))
+    if (Input.GetKeyDown("a"))
     {
         direction = Vector2.left;
     }
 
-   else if (Input.GetKeyDown("right"))
+   else if (Input.GetKeyDown("d"))
    {
         direction = Vector2.right;
    }
     
-    else if (Input.GetKeyDown("up"))
+    else if (Input.GetKeyDown("w"))
    {
         direction = Vector2.up;
    }
 
-   else if (Input.GetKeyDown("down"))
+   else if (Input.GetKeyDown("s"))
    {
        direction = Vector2.down;
    }
@@ -144,7 +144,7 @@ void Move ( )
    void gameStart()
    {
        lives = 3;
-       livesText.text = "Lives X" + lives.ToString();
+       livesText.text = " X" + lives.ToString();
    }
 
 
@@ -155,7 +155,7 @@ void Capture()
     if (lives == 0)
     {
         Destroy(gameObject);
-        loseText.text = "Game Over, Press esc to retuen Restart";
+        loseText.text = "Game Over, Press esc to restart";
 
     }
  
