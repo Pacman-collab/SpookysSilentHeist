@@ -9,6 +9,8 @@ TagManager:
   - Teleporter1
   - Teleporter2
   - Enemy
+  - Bigsoul
+  - PGram
   layers:
   - Default
   - TransparentFX

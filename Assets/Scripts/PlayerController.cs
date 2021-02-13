@@ -53,6 +53,25 @@ public class PlayerController : MonoBehaviour
 
             
         }
+        if (collision.collider.tag == "Bigsoul")
+        {
+            Destroy(collision.collider.gameObject);
+            scoreValue += 50;
+            scoreCheck();
+            
+
+            
+        }
+                if (collision.collider.tag == "PGram")
+        {
+            Destroy(collision.collider.gameObject);
+            scoreValue += 20;
+            scoreCheck();
+            
+
+            
+        }
+    
 
 
     if (collision.collider.tag == "Enemy")
