@@ -171,6 +171,7 @@ void Capture()
 {
     lives -= 1;
     transform.position = spawn;
+    livesText.text = " X" + lives.ToString();
     if (lives == 0)
     {
         Destroy(gameObject);
